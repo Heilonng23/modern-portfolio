@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, MapPin, FileText } from "lucide-react";
+import { Github, Mail, MapPin, FileText } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
@@ -14,26 +14,6 @@ import Image from "next/image";
 // Assuming these imports are correct
 import demoPeazeful from "@app/demoPeazeful.png";
 import demoHeaven from "@app/demoHeaven.png";
-
-const MovingBackground = () => {
-   return (
-      <div className="fixed inset-0 z-[-1] overflow-hidden">
-         <div className="absolute inset-0 bg-background" />
-         <div className="absolute inset-0 opacity-20">
-            <div className="h-full w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
-         </div>
-         <div className="absolute inset-0">
-            <div
-               className="absolute w-[500px] h-[500px] rounded-full opacity-20 blur-[100px]"
-               style={{
-                  background: "radial-gradient(circle, var(--primary) 0%, rgba(0,0,0,0) 70%)",
-                  animation: "moveLight 20s infinite alternate",
-               }}
-            />
-         </div>
-      </div>
-   );
-};
 
 const AnimatedCursor = () => {
    const cursorX = useMotionValue(-100);
@@ -74,7 +54,7 @@ export default function Component() {
 
    return (
       <div className="min-h-screen bg-background text-foreground">
-         <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
             <AnimatedCursor />
             <div className="mx-auto max-w-[60%] px-4 py-8 md:py-16">
                {/* Header Section */}
