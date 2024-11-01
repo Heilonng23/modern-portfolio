@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: "Bricolage Grotesque", sans-serif;
+   font-size: calc(1rem + 2px); /* Adjusts the base font size */
+}
+
+@layer utilities {
+   .text-balance {
+      text-wrap: balance;
+   }
+}
+@keyframes shine {
+   0% {
+      opacity: 0;
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+   }
+   50% {
+      opacity: 0.5;
+   }
+   100% {
+      opacity: 0;
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+   }
+}
+@layer base {
+   :root {
+      /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+      /* CSS: .bg-gradient { background: var(--gradient) } */
+      --gradient: linear-gradient(to top left, #4776e6, #8e54e9);
+
+      --background: 236 49.4% 4.72%;
+      --foreground: 236 7.6% 97.95%;
+
+      --muted: 236 38% 17.7%;
+      --muted-foreground: 236 7.6% 55.9%;
+
+      --popover: 236 49.8% 7.67%;
+      --popover-foreground: 236 7.6% 97.95%;
+
+      --card: 236 49.8% 7.67%;
+      --card-foreground: 236 7.6% 97.95%;
+
+      --border: 236 38% 17.7%;
+      --input: 236 38% 17.7%;
+
+      --primary: 236 76% 59%;
+      --primary-foreground: 236 7.6% 5.8999999999999995%;
+
+      --secondary: 236 38% 17.7%;
+      --secondary-foreground: 236 7.6% 97.95%;
+
+      --accent: 236 38% 17.7%;
+      --accent-foreground: 236 7.6% 97.95%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 236 7.6% 97.95%;
+
+      --ring: 236 76% 59%;
+   }
+}
+
+@layer base {
+   * {
+      @apply border-border;
+   }
+   body {
+      @apply bg-background text-foreground;
+   }
+}
