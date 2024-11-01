@@ -101,7 +101,7 @@ export default function Component() {
                      <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link href="https://github.com/Heilonng23" target="_blank">
                            <Github className="h-4 w-4" />
-                           <span className="sr-only">GitHub</span>
+                           <span className="ml-2"> @Heilonng23 </span>
                         </Link>
                      </Button>
                   </div>
