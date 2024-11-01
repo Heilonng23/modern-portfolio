@@ -384,7 +384,7 @@ export default function Component() {
                            </Link>
                            <div className="p-4 space-y-4">
                               <p className="text-sm text-muted-foreground">
-                                 This AI chatbot lets you talk with the page you're in.
+                                 This AI chatbot lets you talk with the page you&apos;re in.
                               </p>
                               <div>
                                  <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
