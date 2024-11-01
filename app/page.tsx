@@ -14,6 +14,8 @@ import Image from "next/image";
 // Assuming these imports are correct
 import demoPeazeful from "@app/demoPeazeful.png";
 import demoHeaven from "@app/demoHeaven.png";
+import demoAlgorithm from "@app/demoAlgorithm.png";
+import demoAskToMe from "@app/demoAskToMe.png";
 
 const AnimatedCursor = () => {
    const cursorX = useMotionValue(-100);
@@ -326,6 +328,71 @@ export default function Component() {
                                     <Badge>React</Badge>
                                     <Badge>TypeScript</Badge>
                                     <Badge>Supabase</Badge>
+                                    <Badge>Tailwind CSS</Badge>
+                                 </div>
+                              </div>
+                           </div>
+                        </CardContent>
+                     </Card>
+                     <Card className="overflow-hidden">
+                        <CardHeader>
+                           <CardTitle>Algorithm Visualization</CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0">
+                           <Link
+                              href="https://path-finder-algorithm.vercel.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <Image
+                                 src={demoAlgorithm}
+                                 alt="Project Three"
+                                 className="w-full h-48 object-cover"
+                              />
+                           </Link>
+                           <div className="p-4 space-y-4">
+                              <p className="text-sm text-muted-foreground">
+                                 Algorithm visualization for Depth First and Breadth First
+                                 algorithms, built with React, TypeScript, and Tailwind CSS.
+                              </p>
+                              <div>
+                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <div className="flex flex-wrap gap-2">
+                                    <Badge>React</Badge>
+                                    <Badge>TypeScript</Badge>
+                                    <Badge>Tailwind CSS</Badge>
+                                 </div>
+                              </div>
+                           </div>
+                        </CardContent>
+                     </Card>
+                     <Card className="overflow-hidden">
+                        <CardHeader>
+                           <CardTitle>AskToMe Ai bot</CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0">
+                           <Link
+                              href="https://asktome-iota.vercel.app/https:/en.wikipedia.org/wiki/Donald_Trump"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <Image
+                                 src={demoAskToMe}
+                                 alt="Project Four"
+                                 className="w-full h-48 object-cover"
+                              />
+                           </Link>
+                           <div className="p-4 space-y-4">
+                              <p className="text-sm text-muted-foreground">
+                                 This AI chatbot lets you talk with the page you're in.
+                              </p>
+                              <div>
+                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <div className="flex flex-wrap gap-2">
+                                    <Badge>Next.js</Badge>
+                                    <Badge>TypeScript</Badge>
+                                    <Badge>OpenAI</Badge>
+                                    <Badge>ChatGPT</Badge>
                                     <Badge>Tailwind CSS</Badge>
                                  </div>
                               </div>
