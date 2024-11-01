@@ -60,24 +60,26 @@ export default function Component() {
          <div className="fixed inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
 
          {/* Content div - Add relative and z-10 to keep it above background */}
-         <div className="relative z-10 mx-auto max-w-[60%] px-4 py-8 md:py-16">
+         <div className="relative z-10 mx-auto w-full px-4 py-8 md:max-w-[60%] md:py-16">
             <AnimatedCursor />
             {/* Header Section */}
             <motion.header
                initial={{ opacity: 0, y: -20 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5 }}
-               className="mb-16"
+               className="mb-8 md:mb-16"
             >
                <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tight">IBRAGIMOV IBRAGIM</h1>
-                  <h2 className="text-2xl text-muted-foreground">Software Engineer</h2>
+                  <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
+                     IBRAGIMOV IBRAGIM
+                  </h1>
+                  <h2 className="text-xl md:text-2xl text-muted-foreground">Software Engineer</h2>
                   <div className="flex items-center gap-2 text-muted-foreground">
                      <MapPin className="h-4 w-4" />
                      <span>Warsaw, Poland</span>
                   </div>
                   <div className="flex flex-col gap-2">
-                     <Button variant="outline" size="sm" asChild>
+                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link
                            href="https://drive.google.com/file/d/18RsQd31Tc4wUErguzQkJpmuEaNvSGEMz/view?usp=sharing"
                            target="_blank"
@@ -87,7 +89,7 @@ export default function Component() {
                            View Resume
                         </Link>
                      </Button>
-                     <Button variant="outline" size="sm" asChild>
+                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link href="mailto:ibrahimov.ibrahm@gmail.com">
                            <div className="flex items-center">
                               <Mail className="h-4 w-4" />
@@ -96,7 +98,7 @@ export default function Component() {
                         </Link>
                      </Button>
 
-                     <Button variant="outline" size="sm" asChild>
+                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link href="https://github.com/Heilonng23" target="_blank">
                            <Github className="h-4 w-4" />
                            <span className="sr-only">GitHub</span>
@@ -112,10 +114,10 @@ export default function Component() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="mb-16"
+                  className="mb-8 md:mb-16"
                >
                   <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                     <TabsList className="mb-8 w-full justify-center rounded-xl">
+                     <TabsList className="mb-4 md:mb-8 w-full justify-center rounded-xl">
                         <TabsTrigger value="work" className="flex-1  rounded-xl">
                            Work Experience
                         </TabsTrigger>
@@ -124,15 +126,17 @@ export default function Component() {
                         </TabsTrigger>
                      </TabsList>
                      <TabsContent value="work">
-                        <div className="space-y-8">
+                        <div className="space-y-4 md:space-y-8">
                            <Card>
                               <CardHeader>
-                                 <CardTitle>Junior Software Engineer</CardTitle>
-                                 <div className="text-sm text-muted-foreground">
+                                 <CardTitle className="text-lg md:text-xl">
+                                    Junior Software Engineer
+                                 </CardTitle>
+                                 <div className="text-xs md:text-sm text-muted-foreground">
                                     Azercosmos • 2023 September - 2024 September
                                  </div>
                               </CardHeader>
-                              <CardContent className="space-y-2">
+                              <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
                                        Developed user-facing features using React 18, TypeScript,
@@ -154,12 +158,14 @@ export default function Component() {
                            </Card>
                            <Card>
                               <CardHeader>
-                                 <CardTitle>Intern Frontend Developer</CardTitle>
-                                 <div className="text-sm text-muted-foreground">
+                                 <CardTitle className="text-lg md:text-xl">
+                                    Intern Frontend Developer
+                                 </CardTitle>
+                                 <div className="text-xs md:text-sm text-muted-foreground">
                                     VABISS • 2023 May - 2023 August
                                  </div>
                               </CardHeader>
-                              <CardContent className="space-y-2">
+                              <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
                                        Developed UIs using React 17, TypeScript 4.5, and React hooks
@@ -174,12 +180,14 @@ export default function Component() {
                            </Card>
                            <Card>
                               <CardHeader>
-                                 <CardTitle>Intern Software Engineer</CardTitle>
-                                 <div className="text-sm text-muted-foreground">
+                                 <CardTitle className="text-lg md:text-xl">
+                                    Intern Software Engineer
+                                 </CardTitle>
+                                 <div className="text-xs md:text-sm text-muted-foreground">
                                     SOCAR • 2022 October - 2023 March
                                  </div>
                               </CardHeader>
-                              <CardContent className="space-y-2">
+                              <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>Developed backend services using Python and Java</li>
                                     <li>Implemented data solutions with PostgreSQL and DynamoDB</li>
@@ -190,21 +198,23 @@ export default function Component() {
                         </div>
                      </TabsContent>
                      <TabsContent value="education">
-                        <div className="space-y-8">
+                        <div className="space-y-4 md:space-y-8">
                            <Card>
                               <CardHeader>
-                                 <CardTitle>
+                                 <CardTitle className="text-lg md:text-xl">
                                     Bachelor&apos;s Degree in Business Management
                                  </CardTitle>
-                                 <div className="text-sm text-muted-foreground">
+                                 <div className="text-xs md:text-sm text-muted-foreground">
                                     Vistula University
                                  </div>
                               </CardHeader>
                            </Card>
                            <Card>
                               <CardHeader>
-                                 <CardTitle>Bachelor&apos;s Degree in Computer Science</CardTitle>
-                                 <div className="text-sm text-muted-foreground">
+                                 <CardTitle className="text-lg md:text-xl">
+                                    Bachelor&apos;s Degree in Computer Science
+                                 </CardTitle>
+                                 <div className="text-xs md:text-sm text-muted-foreground">
                                     Polish-Japanese Academy of Information Technology
                                  </div>
                               </CardHeader>
@@ -219,12 +229,12 @@ export default function Component() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="mb-16"
+                  className="mb-8 md:mb-16"
                >
-                  <h2 className="mb-8 text-2xl font-semibold">Skills</h2>
-                  <div className="space-y-4">
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Skills</h2>
+                  <div className="space-y-4 md:space-y-8">
                      <div>
-                        <h3 className="mb-2 text-lg font-medium">Frontend</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">Frontend</h3>
                         <div className="flex flex-wrap gap-2">
                            <Badge variant="secondary">React</Badge>
                            <Badge variant="secondary">Next.js</Badge>
@@ -236,7 +246,9 @@ export default function Component() {
                         </div>
                      </div>
                      <div>
-                        <h3 className="mb-2 text-lg font-medium">Backend & Database</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Backend & Database
+                        </h3>
                         <div className="flex flex-wrap gap-2">
                            <Badge variant="secondary">Java</Badge>
                            <Badge variant="secondary">Python</Badge>
@@ -247,7 +259,7 @@ export default function Component() {
                         </div>
                      </div>
                      <div>
-                        <h3 className="mb-2 text-lg font-medium">Other Skills</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">Other Skills</h3>
                         <div className="flex flex-wrap gap-2">
                            <Badge variant="secondary">AWS Lambda</Badge>
                            <Badge variant="secondary">AWS Kinesis</Badge>
@@ -265,11 +277,11 @@ export default function Component() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                >
-                  <h2 className="mb-8 text-2xl font-semibold">Projects</h2>
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Projects</h2>
                   <div className="grid gap-8 md:grid-cols-2">
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle>Peazeful</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">Peazeful</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -284,12 +296,14 @@ export default function Component() {
                               />
                            </Link>
                            <div className="p-4 space-y-4">
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-xs md:text-sm text-muted-foreground">
                                  A micro SaaS app helping people to journal consistently for 5
                                  minutes a day with various templates and data statistics.
                               </p>
                               <div>
-                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <h4 className="text-xs md:text-sm font-semibold mb-2">
+                                    Tech Stack:
+                                 </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>Next.js</Badge>
                                     <Badge>React</Badge>
@@ -303,7 +317,7 @@ export default function Component() {
                      </Card>
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle>Fiction Heaven</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">Fiction Heaven</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -318,12 +332,14 @@ export default function Component() {
                               />
                            </Link>
                            <div className="p-4 space-y-4">
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-xs md:text-sm text-muted-foreground">
                                  A platform where you can search for movies and TV series, rate
                                  them, and save your ratings.
                               </p>
                               <div>
-                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <h4 className="text-xs md:text-sm font-semibold mb-2">
+                                    Tech Stack:
+                                 </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>React</Badge>
                                     <Badge>TypeScript</Badge>
@@ -336,7 +352,9 @@ export default function Component() {
                      </Card>
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle>Algorithm Visualization</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">
+                              Algorithm Visualization
+                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -351,12 +369,14 @@ export default function Component() {
                               />
                            </Link>
                            <div className="p-4 space-y-4">
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-xs md:text-sm text-muted-foreground">
                                  Algorithm visualization for Depth First and Breadth First
                                  algorithms, built with React, TypeScript, and Tailwind CSS.
                               </p>
                               <div>
-                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <h4 className="text-xs md:text-sm font-semibold mb-2">
+                                    Tech Stack:
+                                 </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>React</Badge>
                                     <Badge>TypeScript</Badge>
@@ -368,7 +388,7 @@ export default function Component() {
                      </Card>
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle>AskToMe Ai bot</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">AskToMe Ai bot</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -383,11 +403,13 @@ export default function Component() {
                               />
                            </Link>
                            <div className="p-4 space-y-4">
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-xs md:text-sm text-muted-foreground">
                                  This AI chatbot lets you talk with the page you&apos;re in.
                               </p>
                               <div>
-                                 <h4 className="text-sm font-semibold mb-2">Tech Stack:</h4>
+                                 <h4 className="text-xs md:text-sm font-semibold mb-2">
+                                    Tech Stack:
+                                 </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>Next.js</Badge>
                                     <Badge>TypeScript</Badge>
