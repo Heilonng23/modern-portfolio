@@ -71,7 +71,7 @@ export default function Component() {
             >
                <div className="space-y-4">
                   <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
-                     IBRAGIMOV IBRAGIM
+                     IBRAGIM IBRAGIMOV
                   </h1>
                   <h2 className="text-xl md:text-2xl text-muted-foreground">Software Engineer</h2>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -81,7 +81,7 @@ export default function Component() {
                   <div className="flex flex-col gap-2">
                      <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link
-                           href="https://drive.google.com/file/d/18RsQd31Tc4wUErguzQkJpmuEaNvSGEMz/view?usp=sharing"
+                           href="https://drive.google.com/file/d/1rG3VJECOoFDRYL9o8XBKD8Bx0Mzx9qk-/view?usp=sharing"
                            target="_blank"
                            rel="noopener noreferrer"
                         >
@@ -133,25 +133,44 @@ export default function Component() {
                                     Junior Software Engineer
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Azercosmos • 2023 September - 2024 September
+                                    Sinus.ge / E-amahh • 2023 October - Present
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Developed user-facing features using React 18, TypeScript,
-                                       and Redux
+                                       Use{" "}
+                                       <strong className="bg-white text-secondary">React</strong>.
+                                       to build and maintain web applications.
+                                    </li>
+                                    <li className="text-base">
+                                       Utilize{" "}
+                                       <strong className="bg-white text-secondary">
+                                          TypeScript
+                                       </strong>{" "}
+                                       for type-safe code and enhanced development experience.
                                     </li>
                                     <li>
-                                       Integrated RESTful APIs using Axios for satellite-based
-                                       systems
+                                       Implement{" "}
+                                       <strong className="bg-white text-secondary">Next.js</strong>{" "}
+                                       for server-side rendering and optimized performance.to build
+                                       and maintain web applications.
                                     </li>
                                     <li>
-                                       Implemented responsive designs using CSS3 and Bootstrap 5
+                                       Develop and maintain scalable and efficient backend services
+                                       using{" "}
+                                       <strong className="bg-white text-secondary">Java</strong>.
                                     </li>
                                     <li>
-                                       Collaborated with backend team to optimize Java-based
-                                       microservices
+                                       Design and optimize database schemas and queries for
+                                       <strong className="bg-white text-secondary">MySQL</strong>.
+                                    </li>
+                                    <li>
+                                       Implement{" "}
+                                       <strong className="bg-white text-secondary">
+                                          RESTful APis
+                                       </strong>
+                                       . and integrate with frontend applications.
                                     </li>
                                  </ul>
                               </CardContent>
@@ -159,39 +178,42 @@ export default function Component() {
                            <Card>
                               <CardHeader>
                                  <CardTitle className="text-lg md:text-xl">
-                                    Intern Frontend Developer
+                                    Software Engineer Intern - Team Lead for Final Project
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    VABISS • 2023 May - 2023 August
+                                    Polish-Japanese Academy of Technology
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Developed UIs using React 17, TypeScript 4.5, and React hooks
+                                       Develop a project management tool using{" "}
+                                       <strong className="bg-white text-secondary">React</strong>{" "}
+                                       for the frontend.
                                     </li>
-                                    <li>Implemented data visualizations using D3.js</li>
-                                    <li>Optimized data handling with PostgreSQL</li>
                                     <li>
-                                       Created reusable React components using CSS Grid and Flexbox
+                                       Create a{" "}
+                                       <strong className="bg-white text-secondary">
+                                          Java-based RESTful API
+                                       </strong>{" "}
+                                       backend for secure data handling.
                                     </li>
-                                 </ul>
-                              </CardContent>
-                           </Card>
-                           <Card>
-                              <CardHeader>
-                                 <CardTitle className="text-lg md:text-xl">
-                                    Intern Software Engineer
-                                 </CardTitle>
-                                 <div className="text-xs md:text-sm text-muted-foreground">
-                                    SOCAR • 2022 October - 2023 March
-                                 </div>
-                              </CardHeader>
-                              <CardContent className="space-y-2 text-sm md:text-base">
-                                 <ul className="list-disc list-inside space-y-2">
-                                    <li>Developed backend services using Python and Java</li>
-                                    <li>Implemented data solutions with PostgreSQL and DynamoDB</li>
-                                    <li>Utilized AWS services including Lambda and Kinesis</li>
+                                    <li>
+                                       Utilize{" "}
+                                       <strong className="bg-white text-secondary">MySQL</strong>{" "}
+                                       for efficient data storage and retrieval.
+                                    </li>
+                                    <li>
+                                       Implement user authentication with{" "}
+                                       <strong className="bg-white text-secondary">JWT</strong> for
+                                       secure access.
+                                    </li>
+                                    <li>
+                                       Deploy on{" "}
+                                       <strong className="bg-white text-secondary">AWS</strong> with{" "}
+                                       <strong className="bg-white text-secondary">CI/CD</strong>{" "}
+                                       for automated testing and deployment.
+                                    </li>
                                  </ul>
                               </CardContent>
                            </Card>
