@@ -73,35 +73,33 @@ export default function Component() {
                   <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
                      IBRAGIM IBRAGIMOV
                   </h1>
-                  <h2 className="text-xl md:text-2xl text-muted-foreground">Software Engineer</h2>
+                  <h2 className="text-xl md:text-2xl text-muted-foreground">Project Manager</h2>
                   <div className="flex items-center gap-2 text-muted-foreground">
                      <MapPin className="h-4 w-4" />
                      <span>Warsaw, Poland</span>
                   </div>
                   <div className="flex flex-col gap-2">
                      <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
-                        <Link
-                           href="https://drive.google.com/file/d/1rG3VJECOoFDRYL9o8XBKD8Bx0Mzx9qk-/view?usp=sharing"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <FileText className="h-4 w-4 mr-2" />
-                           View Resume
+                        <Link href="tel:+48692743171">
+                           <div className="flex items-center">
+                              <span className="ml-2 text-[16px]">+48 692 743 171</span>
+                           </div>
                         </Link>
                      </Button>
                      <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
                         <Link href="mailto:ibrahimov.ibrahm@gmail.com">
                            <div className="flex items-center">
                               <Mail className="h-4 w-4" />
-                              <span className="ml-2">ibrahimov.ibrahm@gmail.com</span>
+                              <span className="ml-2 text-[16px]">ibrahimov.ibrahm@gmail.com</span>
                            </div>
                         </Link>
                      </Button>
-
                      <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
-                        <Link href="https://github.com/Heilonng23" target="_blank">
-                           <Github className="h-4 w-4" />
-                           <span className="ml-2"> @Heilonng23 </span>
+                        <Link
+                           href="https://www.linkedin.com/in/ibragim-ibragimov-1b606024b/"
+                           target="_blank"
+                        >
+                           <span className="ml-2 text-[16px]">LinkedIn</span>
                         </Link>
                      </Button>
                   </div>
@@ -129,90 +127,66 @@ export default function Component() {
                         <div className="space-y-4 md:space-y-8">
                            <Card>
                               <CardHeader>
+                                 {" "}
                                  <CardTitle className="text-lg md:text-xl">
-                                    Junior Software Engineer
+                                    IT Project Manager
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Sinus.ge / E-amahh • 2023 October - Present
+                                    Sinus Technology • 2023 - Present
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Use{" "}
-                                       <strong className="bg-white text-secondary">React</strong>.
-                                       to build and maintain web applications.
-                                    </li>
-                                    <li className="text-base">
-                                       Utilize{" "}
-                                       <strong className="bg-white text-secondary">
-                                          TypeScript
-                                       </strong>{" "}
-                                       for type-safe code and enhanced development experience.
+                                       Lead and manage multiple cross-functional teams to deliver
+                                       web-based applications using{" "}
+                                       <span className="bg-destructive">React</span>,{" "}
+                                       <span className="bg-destructive">Next.js</span>, and{" "}
+                                       <span className="bg-destructive">TypeScript</span>.
                                     </li>
                                     <li>
-                                       Implement{" "}
-                                       <strong className="bg-white text-secondary">Next.js</strong>{" "}
-                                       for server-side rendering and optimized performance.to build
-                                       and maintain web applications.
+                                       Developed detailed project plans, managed timelines, and
+                                       tracked progress using tools like{" "}
+                                       <span className="bg-destructive">Jira</span> and{" "}
+                                       <span className="bg-destructive">Trello</span>.
                                     </li>
                                     <li>
-                                       Develop and maintain scalable and efficient backend services
-                                       using{" "}
-                                       <strong className="bg-white text-secondary">Java</strong>.
+                                       Conducted regular stakeholder meetings to gather
+                                       requirements, provide updates, and manage expectations.
                                     </li>
                                     <li>
-                                       Design and optimize database schemas and queries for
-                                       <strong className="bg-white text-secondary">MySQL</strong>.
-                                    </li>
-                                    <li>
-                                       Implement{" "}
-                                       <strong className="bg-white text-secondary">
-                                          RESTful APis
-                                       </strong>
-                                       . and integrate with frontend applications.
+                                       Optimized resource allocation and managed budgets to ensure
+                                       projects stay within scope and cost.
                                     </li>
                                  </ul>
                               </CardContent>
                            </Card>
                            <Card>
                               <CardHeader>
+                                 {" "}
                                  <CardTitle className="text-lg md:text-xl">
-                                    Software Engineer Intern - Team Lead for Final Project
+                                    Project Manager Intern & Team Lead
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Polish-Japanese Academy of Technology
+                                    Polish-Japanese Academy of Technology • May 2022 – July 2022
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Develop a project management tool using{" "}
-                                       <strong className="bg-white text-secondary">React</strong>{" "}
-                                       for the frontend.
+                                       Directed a team of 5 developers to build a full-stack project
+                                       management tool, achieving delivery within the set timeline.
                                     </li>
                                     <li>
-                                       Create a{" "}
-                                       <strong className="bg-white text-secondary">
-                                          Java-based RESTful API
-                                       </strong>{" "}
-                                       backend for secure data handling.
+                                       Oversaw the development of a{" "}
+                                       <span className="bg-destructive">Java</span>-based backend
+                                       and integration with{" "}
+                                       <span className="bg-destructive">React</span> for the user
+                                       interface.
                                     </li>
                                     <li>
-                                       Utilize{" "}
-                                       <strong className="bg-white text-secondary">MySQL</strong>{" "}
-                                       for efficient data storage and retrieval.
-                                    </li>
-                                    <li>
-                                       Implement user authentication with{" "}
-                                       <strong className="bg-white text-secondary">JWT</strong> for
-                                       secure access.
-                                    </li>
-                                    <li>
-                                       Deploy on{" "}
-                                       <strong className="bg-white text-secondary">AWS</strong> with{" "}
-                                       <strong className="bg-white text-secondary">CI/CD</strong>{" "}
-                                       for automated testing and deployment.
+                                       Designed and implemented project tracking features, including
+                                       milestone tracking and Gantt charts.
                                     </li>
                                  </ul>
                               </CardContent>
@@ -224,20 +198,11 @@ export default function Component() {
                            <Card>
                               <CardHeader>
                                  <CardTitle className="text-lg md:text-xl">
-                                    Bachelor&apos;s Degree in Business Management
+                                    Bachelor&apos;s Degree in Business Administration, specialized
+                                    in Project Management
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Vistula University
-                                 </div>
-                              </CardHeader>
-                           </Card>
-                           <Card>
-                              <CardHeader>
-                                 <CardTitle className="text-lg md:text-xl">
-                                    Bachelor&apos;s Degree in Computer Science
-                                 </CardTitle>
-                                 <div className="text-xs md:text-sm text-muted-foreground">
-                                    Polish-Japanese Academy of Information Technology
+                                    Vistula University | 2023-2026
                                  </div>
                               </CardHeader>
                            </Card>
@@ -256,38 +221,62 @@ export default function Component() {
                   <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Skills</h2>
                   <div className="space-y-4 md:space-y-8">
                      <div>
-                        <h3 className="mb-2 text-base md:text-lg font-medium">Frontend</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Project Management Tools
+                        </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">React</Badge>
-                           <Badge variant="secondary">Next.js</Badge>
-                           <Badge variant="secondary">TypeScript</Badge>
-                           <Badge variant="secondary">Redux</Badge>
-                           <Badge variant="secondary">CSS3</Badge>
-                           <Badge variant="secondary">Bootstrap</Badge>
-                           <Badge variant="secondary">D3.js</Badge>
+                           <Badge variant="secondary">Jira</Badge>
+                           <Badge variant="secondary">Trello</Badge>
+                           <Badge variant="secondary">Monday.com</Badge>
+                           <Badge variant="secondary">Microsoft Project</Badge>
                         </div>
                      </div>
                      <div>
                         <h3 className="mb-2 text-base md:text-lg font-medium">
-                           Backend & Database
+                           Agile Methodologies
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Java</Badge>
-                           <Badge variant="secondary">Python</Badge>
-                           <Badge variant="secondary">Spring Boot</Badge>
-                           <Badge variant="secondary">PostgreSQL</Badge>
-                           <Badge variant="secondary">RESTful APIs</Badge>
-                           <Badge variant="secondary">Hibernate ORM</Badge>
+                           <Badge variant="secondary">Scrum</Badge>
+                           <Badge variant="secondary">Kanban</Badge>
+                           <Badge variant="secondary">SAFe</Badge>
                         </div>
                      </div>
                      <div>
-                        <h3 className="mb-2 text-base md:text-lg font-medium">Other Skills</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">Team Leadership</h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">AWS Lambda</Badge>
-                           <Badge variant="secondary">AWS Kinesis</Badge>
-                           <Badge variant="secondary">Redis</Badge>
-                           <Badge variant="secondary">Git</Badge>
-                           <Badge variant="secondary">Agile</Badge>
+                           <Badge variant="secondary">Conflict resolution</Badge>
+                           <Badge variant="secondary">Performance monitoring</Badge>
+                           <Badge variant="secondary">Resource allocation</Badge>
+                        </div>
+                     </div>
+                     <div>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Stakeholder Management
+                        </h3>
+                        <div className="flex flex-wrap gap-2">
+                           <Badge variant="secondary">Requirement gathering</Badge>
+                           <Badge variant="secondary">Progress reporting</Badge>
+                           <Badge variant="secondary">Client communication</Badge>
+                        </div>
+                     </div>
+                     <div>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Technical Proficiency
+                        </h3>
+                        <div className="flex flex-wrap gap-2">
+                           <Badge variant="secondary">React</Badge>
+                           <Badge variant="secondary">Python</Badge>
+                           <Badge variant="secondary">TypeScript</Badge>
+                           <Badge variant="secondary">Java</Badge>
+                           <Badge variant="secondary">RESTful APIs</Badge>
+                        </div>
+                     </div>
+                     <div>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">Risk Management</h3>
+                        <div className="flex flex-wrap gap-2">
+                           <Badge variant="secondary">Issue tracking</Badge>
+                           <Badge variant="secondary">Mitigation strategies</Badge>
+                           <Badge variant="secondary">Continuous improvement</Badge>
                         </div>
                      </div>
                   </div>
@@ -443,6 +432,25 @@ export default function Component() {
                            </div>
                         </CardContent>
                      </Card>
+                  </div>
+               </motion.section>
+
+               {/* Certificates Section */}
+               <motion.section
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+               >
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Certificates</h2>
+                  <div className="space-y-4 md:space-y-8">
+                     <ul className="list-disc list-inside space-y-2">
+                        <li>
+                           Professional Diploma in Technical Project Management by MTF Institute
+                        </li>
+                        <li>Professional Diploma in Business Project Management</li>
+                        <li>Professional Certificate in Agile and SCRUM</li>
+                        <li>Databases with Python, MongoDB, MySQL</li>
+                     </ul>
                   </div>
                </motion.section>
             </main>

@@ -6,7 +6,7 @@
 
 body {
    font-family: "Bricolage Grotesque", sans-serif;
-   font-size: calc(1rem + 2px); /* Adjusts the base font size */
+   font-size: calc(1rem + 4px); /* Adjusts the base font size */
 }
 
 @layer utilities {
