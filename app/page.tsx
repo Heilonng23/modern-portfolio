@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Mail, MapPin, FileText } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
