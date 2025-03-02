@@ -3,16 +3,30 @@
 import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import {
+   motion,
+   useMotionValue,
+   useSpring,
+} from "framer-motion";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+   Card,
+   CardContent,
+   CardHeader,
+   CardTitle,
+} from "@/components/ui/card";
+import {
+   Tabs,
+   TabsContent,
+   TabsList,
+   TabsTrigger,
+} from "@/components/ui/tabs";
 import Image from "next/image";
 
 // Assuming these imports are correct
-import demoPeazeful from "@app/demoPeazeful.png";
+import demoPeazehub from "@app/demoPeazehub.png";
 import demoHeaven from "@app/demoHeaven.png";
 import demoAlgorithm from "@app/demoAlgorithm.png";
 import demoAskToMe from "@app/demoAskToMe.png";
@@ -34,7 +48,10 @@ const AnimatedCursor = () => {
       window.addEventListener("mousemove", moveCursor);
 
       return () => {
-         window.removeEventListener("mousemove", moveCursor);
+         window.removeEventListener(
+            "mousemove",
+            moveCursor
+         );
       };
    }, [cursorX, cursorY]);
 
@@ -73,33 +90,56 @@ export default function Component() {
                   <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
                      IBRAGIM IBRAGIMOV
                   </h1>
-                  <h2 className="text-xl md:text-2xl text-muted-foreground">Project Manager</h2>
+                  <h2 className="text-xl md:text-2xl text-muted-foreground">
+                     Project Manager
+                  </h2>
                   <div className="flex items-center gap-2 text-muted-foreground">
                      <MapPin className="h-4 w-4" />
                      <span>Warsaw, Poland</span>
                   </div>
                   <div className="flex flex-col gap-2">
-                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
+                     <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="w-full md:w-auto"
+                     >
                         <Link href="tel:+48692743171">
                            <div className="flex items-center">
-                              <span className="ml-2 text-[16px]">+48 692 743 171</span>
+                              <span className="ml-2 text-[16px]">
+                                 +48 692 743 171
+                              </span>
                            </div>
                         </Link>
                      </Button>
-                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
+                     <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="w-full md:w-auto"
+                     >
                         <Link href="mailto:ibrahimov.ibrahm@gmail.com">
                            <div className="flex items-center">
                               <Mail className="h-4 w-4" />
-                              <span className="ml-2 text-[16px]">ibrahimov.ibrahm@gmail.com</span>
+                              <span className="ml-2 text-[16px]">
+                                 ibrahimov.ibrahm@gmail.com
+                              </span>
                            </div>
                         </Link>
                      </Button>
-                     <Button variant="outline" size="sm" asChild className="w-full md:w-auto">
+                     <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="w-full md:w-auto"
+                     >
                         <Link
                            href="https://www.linkedin.com/in/ibragim-ibragimov-1b606024b/"
                            target="_blank"
                         >
-                           <span className="ml-2 text-[16px]">LinkedIn</span>
+                           <span className="ml-2 text-[16px]">
+                              LinkedIn
+                           </span>
                         </Link>
                      </Button>
                   </div>
@@ -114,12 +154,22 @@ export default function Component() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="mb-8 md:mb-16"
                >
-                  <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+                  <Tabs
+                     value={activeTab}
+                     onValueChange={setActiveTab}
+                     className="w-full"
+                  >
                      <TabsList className="mb-4 md:mb-8 w-full justify-center rounded-xl">
-                        <TabsTrigger value="work" className="flex-1  rounded-xl">
+                        <TabsTrigger
+                           value="work"
+                           className="flex-1  rounded-xl"
+                        >
                            Work Experience
                         </TabsTrigger>
-                        <TabsTrigger value="education" className="flex-1  rounded-xl">
+                        <TabsTrigger
+                           value="education"
+                           className="flex-1  rounded-xl"
+                        >
                            Education
                         </TabsTrigger>
                      </TabsList>
@@ -132,31 +182,62 @@ export default function Component() {
                                     IT Project Manager
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Sinus Technology • 2023 - Present
+                                    Sinus Technology • 2023
+                                    - Present
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Lead and manage multiple cross-functional teams to deliver
-                                       web-based applications using{" "}
-                                       <span className="bg-destructive">React</span>,{" "}
-                                       <span className="bg-destructive">Next.js</span>, and{" "}
-                                       <span className="bg-destructive">TypeScript</span>.
+                                       Lead and manage
+                                       multiple
+                                       cross-functional
+                                       teams to deliver
+                                       web-based
+                                       applications using{" "}
+                                       <span className="bg-destructive">
+                                          React
+                                       </span>
+                                       ,{" "}
+                                       <span className="bg-destructive">
+                                          Next.js
+                                       </span>
+                                       , and{" "}
+                                       <span className="bg-destructive">
+                                          TypeScript
+                                       </span>
+                                       .
                                     </li>
                                     <li>
-                                       Developed detailed project plans, managed timelines, and
-                                       tracked progress using tools like{" "}
-                                       <span className="bg-destructive">Jira</span> and{" "}
-                                       <span className="bg-destructive">Trello</span>.
+                                       Developed detailed
+                                       project plans,
+                                       managed timelines,
+                                       and tracked progress
+                                       using tools like{" "}
+                                       <span className="bg-destructive">
+                                          Jira
+                                       </span>{" "}
+                                       and{" "}
+                                       <span className="bg-destructive">
+                                          Trello
+                                       </span>
+                                       .
                                     </li>
                                     <li>
-                                       Conducted regular stakeholder meetings to gather
-                                       requirements, provide updates, and manage expectations.
+                                       Conducted regular
+                                       stakeholder meetings
+                                       to gather
+                                       requirements, provide
+                                       updates, and manage
+                                       expectations.
                                     </li>
                                     <li>
-                                       Optimized resource allocation and managed budgets to ensure
-                                       projects stay within scope and cost.
+                                       Optimized resource
+                                       allocation and
+                                       managed budgets to
+                                       ensure projects stay
+                                       within scope and
+                                       cost.
                                     </li>
                                  </ul>
                               </CardContent>
@@ -165,28 +246,47 @@ export default function Component() {
                               <CardHeader>
                                  {" "}
                                  <CardTitle className="text-lg md:text-xl">
-                                    Project Manager Intern & Team Lead
+                                    Project Manager Intern &
+                                    Team Lead
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Polish-Japanese Academy of Technology • May 2022 – July 2022
+                                    Polish-Japanese Academy
+                                    of Technology • May 2022
+                                    – July 2022
                                  </div>
                               </CardHeader>
                               <CardContent className="space-y-2 text-sm md:text-base">
                                  <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                       Directed a team of 5 developers to build a full-stack project
-                                       management tool, achieving delivery within the set timeline.
+                                       Directed a team of 5
+                                       developers to build a
+                                       full-stack project
+                                       management tool,
+                                       achieving delivery
+                                       within the set
+                                       timeline.
                                     </li>
                                     <li>
-                                       Oversaw the development of a{" "}
-                                       <span className="bg-destructive">Java</span>-based backend
-                                       and integration with{" "}
-                                       <span className="bg-destructive">React</span> for the user
+                                       Oversaw the
+                                       development of a{" "}
+                                       <span className="bg-destructive">
+                                          Java
+                                       </span>
+                                       -based backend and
+                                       integration with{" "}
+                                       <span className="bg-destructive">
+                                          React
+                                       </span>{" "}
+                                       for the user
                                        interface.
                                     </li>
                                     <li>
-                                       Designed and implemented project tracking features, including
-                                       milestone tracking and Gantt charts.
+                                       Designed and
+                                       implemented project
+                                       tracking features,
+                                       including milestone
+                                       tracking and Gantt
+                                       charts.
                                     </li>
                                  </ul>
                               </CardContent>
@@ -198,11 +298,15 @@ export default function Component() {
                            <Card>
                               <CardHeader>
                                  <CardTitle className="text-lg md:text-xl">
-                                    Bachelor&apos;s Degree in Business Administration, specialized
-                                    in Project Management
+                                    Bachelor&apos;s Degree
+                                    in Business
+                                    Administration,
+                                    specialized in Project
+                                    Management
                                  </CardTitle>
                                  <div className="text-xs md:text-sm text-muted-foreground">
-                                    Vistula University | 2023-2026
+                                    Vistula University |
+                                    2023-2026
                                  </div>
                               </CardHeader>
                            </Card>
@@ -218,17 +322,27 @@ export default function Component() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="mb-8 md:mb-16"
                >
-                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Skills</h2>
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">
+                     Skills
+                  </h2>
                   <div className="space-y-4 md:space-y-8">
                      <div>
                         <h3 className="mb-2 text-base md:text-lg font-medium">
                            Project Management Tools
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Jira</Badge>
-                           <Badge variant="secondary">Trello</Badge>
-                           <Badge variant="secondary">Monday.com</Badge>
-                           <Badge variant="secondary">Microsoft Project</Badge>
+                           <Badge variant="secondary">
+                              Jira
+                           </Badge>
+                           <Badge variant="secondary">
+                              Trello
+                           </Badge>
+                           <Badge variant="secondary">
+                              Monday.com
+                           </Badge>
+                           <Badge variant="secondary">
+                              Microsoft Project
+                           </Badge>
                         </div>
                      </div>
                      <div>
@@ -236,17 +350,31 @@ export default function Component() {
                            Agile Methodologies
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Scrum</Badge>
-                           <Badge variant="secondary">Kanban</Badge>
-                           <Badge variant="secondary">SAFe</Badge>
+                           <Badge variant="secondary">
+                              Scrum
+                           </Badge>
+                           <Badge variant="secondary">
+                              Kanban
+                           </Badge>
+                           <Badge variant="secondary">
+                              SAFe
+                           </Badge>
                         </div>
                      </div>
                      <div>
-                        <h3 className="mb-2 text-base md:text-lg font-medium">Team Leadership</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Team Leadership
+                        </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Conflict resolution</Badge>
-                           <Badge variant="secondary">Performance monitoring</Badge>
-                           <Badge variant="secondary">Resource allocation</Badge>
+                           <Badge variant="secondary">
+                              Conflict resolution
+                           </Badge>
+                           <Badge variant="secondary">
+                              Performance monitoring
+                           </Badge>
+                           <Badge variant="secondary">
+                              Resource allocation
+                           </Badge>
                         </div>
                      </div>
                      <div>
@@ -254,9 +382,15 @@ export default function Component() {
                            Stakeholder Management
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Requirement gathering</Badge>
-                           <Badge variant="secondary">Progress reporting</Badge>
-                           <Badge variant="secondary">Client communication</Badge>
+                           <Badge variant="secondary">
+                              Requirement gathering
+                           </Badge>
+                           <Badge variant="secondary">
+                              Progress reporting
+                           </Badge>
+                           <Badge variant="secondary">
+                              Client communication
+                           </Badge>
                         </div>
                      </div>
                      <div>
@@ -264,19 +398,37 @@ export default function Component() {
                            Technical Proficiency
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">React</Badge>
-                           <Badge variant="secondary">Python</Badge>
-                           <Badge variant="secondary">TypeScript</Badge>
-                           <Badge variant="secondary">Java</Badge>
-                           <Badge variant="secondary">RESTful APIs</Badge>
+                           <Badge variant="secondary">
+                              React
+                           </Badge>
+                           <Badge variant="secondary">
+                              Python
+                           </Badge>
+                           <Badge variant="secondary">
+                              TypeScript
+                           </Badge>
+                           <Badge variant="secondary">
+                              Java
+                           </Badge>
+                           <Badge variant="secondary">
+                              RESTful APIs
+                           </Badge>
                         </div>
                      </div>
                      <div>
-                        <h3 className="mb-2 text-base md:text-lg font-medium">Risk Management</h3>
+                        <h3 className="mb-2 text-base md:text-lg font-medium">
+                           Risk Management
+                        </h3>
                         <div className="flex flex-wrap gap-2">
-                           <Badge variant="secondary">Issue tracking</Badge>
-                           <Badge variant="secondary">Mitigation strategies</Badge>
-                           <Badge variant="secondary">Continuous improvement</Badge>
+                           <Badge variant="secondary">
+                              Issue tracking
+                           </Badge>
+                           <Badge variant="secondary">
+                              Mitigation strategies
+                           </Badge>
+                           <Badge variant="secondary">
+                              Continuous improvement
+                           </Badge>
                         </div>
                      </div>
                   </div>
@@ -288,11 +440,15 @@ export default function Component() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                >
-                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Projects</h2>
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">
+                     Projects
+                  </h2>
                   <div className="grid gap-8 md:grid-cols-2">
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle className="text-lg md:text-xl">Peazeful</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">
+                              Peazeful
+                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -301,15 +457,17 @@ export default function Component() {
                               rel="noopener noreferrer"
                            >
                               <Image
-                                 src={demoPeazeful}
+                                 src={demoPeazehub}
                                  alt="Peazeful"
                                  className="w-full h-48 object-cover"
                               />
                            </Link>
                            <div className="p-4 space-y-4">
                               <p className="text-xs md:text-sm text-muted-foreground">
-                                 A micro SaaS app helping people to journal consistently for 5
-                                 minutes a day with various templates and data statistics.
+                                 A micro SaaS app helping
+                                 people to track their time
+                                 consistently for with
+                                 gamified statistics.
                               </p>
                               <div>
                                  <h4 className="text-xs md:text-sm font-semibold mb-2">
@@ -318,9 +476,13 @@ export default function Component() {
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>Next.js</Badge>
                                     <Badge>React</Badge>
-                                    <Badge>TypeScript</Badge>
+                                    <Badge>
+                                       TypeScript
+                                    </Badge>
                                     <Badge>Supabase</Badge>
-                                    <Badge>Tailwind CSS</Badge>
+                                    <Badge>
+                                       Tailwind CSS
+                                    </Badge>
                                  </div>
                               </div>
                            </div>
@@ -328,7 +490,9 @@ export default function Component() {
                      </Card>
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle className="text-lg md:text-xl">Fiction Heaven</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">
+                              Fiction Heaven
+                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -344,8 +508,10 @@ export default function Component() {
                            </Link>
                            <div className="p-4 space-y-4">
                               <p className="text-xs md:text-sm text-muted-foreground">
-                                 A platform where you can search for movies and TV series, rate
-                                 them, and save your ratings.
+                                 A platform where you can
+                                 search for movies and TV
+                                 series, rate them, and save
+                                 your ratings.
                               </p>
                               <div>
                                  <h4 className="text-xs md:text-sm font-semibold mb-2">
@@ -353,9 +519,13 @@ export default function Component() {
                                  </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>React</Badge>
-                                    <Badge>TypeScript</Badge>
+                                    <Badge>
+                                       TypeScript
+                                    </Badge>
                                     <Badge>Supabase</Badge>
-                                    <Badge>Tailwind CSS</Badge>
+                                    <Badge>
+                                       Tailwind CSS
+                                    </Badge>
                                  </div>
                               </div>
                            </div>
@@ -381,8 +551,11 @@ export default function Component() {
                            </Link>
                            <div className="p-4 space-y-4">
                               <p className="text-xs md:text-sm text-muted-foreground">
-                                 Algorithm visualization for Depth First and Breadth First
-                                 algorithms, built with React, TypeScript, and Tailwind CSS.
+                                 Algorithm visualization for
+                                 Depth First and Breadth
+                                 First algorithms, built
+                                 with React, TypeScript, and
+                                 Tailwind CSS.
                               </p>
                               <div>
                                  <h4 className="text-xs md:text-sm font-semibold mb-2">
@@ -390,8 +563,12 @@ export default function Component() {
                                  </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>React</Badge>
-                                    <Badge>TypeScript</Badge>
-                                    <Badge>Tailwind CSS</Badge>
+                                    <Badge>
+                                       TypeScript
+                                    </Badge>
+                                    <Badge>
+                                       Tailwind CSS
+                                    </Badge>
                                  </div>
                               </div>
                            </div>
@@ -399,7 +576,9 @@ export default function Component() {
                      </Card>
                      <Card className="overflow-hidden">
                         <CardHeader>
-                           <CardTitle className="text-lg md:text-xl">AskToMe Ai bot</CardTitle>
+                           <CardTitle className="text-lg md:text-xl">
+                              AskToMe Ai bot
+                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-0">
                            <Link
@@ -415,7 +594,9 @@ export default function Component() {
                            </Link>
                            <div className="p-4 space-y-4">
                               <p className="text-xs md:text-sm text-muted-foreground">
-                                 This AI chatbot lets you talk with the page you&apos;re in.
+                                 This AI chatbot lets you
+                                 talk with the page
+                                 you&apos;re in.
                               </p>
                               <div>
                                  <h4 className="text-xs md:text-sm font-semibold mb-2">
@@ -423,10 +604,14 @@ export default function Component() {
                                  </h4>
                                  <div className="flex flex-wrap gap-2">
                                     <Badge>Next.js</Badge>
-                                    <Badge>TypeScript</Badge>
+                                    <Badge>
+                                       TypeScript
+                                    </Badge>
                                     <Badge>OpenAI</Badge>
                                     <Badge>ChatGPT</Badge>
-                                    <Badge>Tailwind CSS</Badge>
+                                    <Badge>
+                                       Tailwind CSS
+                                    </Badge>
                                  </div>
                               </div>
                            </div>
@@ -441,15 +626,28 @@ export default function Component() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                >
-                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">Certificates</h2>
+                  <h2 className="mb-4 md:mb-8 text-xl md:text-2xl font-semibold">
+                     Certificates
+                  </h2>
                   <div className="space-y-4 md:space-y-8">
                      <ul className="list-disc list-inside space-y-2">
                         <li>
-                           Professional Diploma in Technical Project Management by MTF Institute
+                           Professional Diploma in Technical
+                           Project Management by MTF
+                           Institute
                         </li>
-                        <li>Professional Diploma in Business Project Management</li>
-                        <li>Professional Certificate in Agile and SCRUM</li>
-                        <li>Databases with Python, MongoDB, MySQL</li>
+                        <li>
+                           Professional Diploma in Business
+                           Project Management
+                        </li>
+                        <li>
+                           Professional Certificate in Agile
+                           and SCRUM
+                        </li>
+                        <li>
+                           Databases with Python, MongoDB,
+                           MySQL
+                        </li>
                      </ul>
                   </div>
                </motion.section>
